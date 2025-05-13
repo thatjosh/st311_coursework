@@ -1,0 +1,63 @@
+# Byte‑compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+*.egg
+*.whl
+
+# Virtual environments
+myenv/
+.venv/
+env/
+ENV/
+venv/
+
+# PyTest / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+*.cover
+*.py,cover
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# Storage of models, replay‐buffers, etc.
+storage/
+checkpoints/
+*.ckpt
+*.pt
+*.pth
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*~ 
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
