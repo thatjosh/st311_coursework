@@ -8,7 +8,6 @@ output: html_document
 ```{r}
 library(tidyverse)
 library(plotly)
-library(mgcv)
 library(dplyr)
 library(tidymodels)
 ```
@@ -41,10 +40,6 @@ model_lm
 ```{r}
 summary(model_lm)
 ```
-
-
-
-
 
 
 
