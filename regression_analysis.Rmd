@@ -1,0 +1,62 @@
+---
+title: "Regression Analysis of Hyperparams Tuning"
+date: "2025-05-12"
+output: html_document
+---
+
+
+```{r}
+library(tidyverse)
+library(plotly)
+library(mgcv)
+library(dplyr)
+library(tidymodels)
+```
+
+```{r}
+dataset <- read.csv('log_dataset.csv')
+```
+
+
+```{r}
+dataset$model <- as.factor(dataset$model)
+dataset$lr <- as.factor(dataset$lr)
+dataset$val_loss <- as.factor(dataset$val_loss)
+dataset$discount <- as.factor(dataset$discount)
+dataset$entropy <- as.factor(dataset$entropy)
+```
+
+```{r}
+model_lm <- lm(return_mean ~ model*lr + model*val_loss + model*discount + model*entropy +
+                              lr*val_loss + lr*discount + lr*entropy + 
+                              val_loss*discount + val_loss*entropy +
+                              discount*entropy + model + lr + val_loss + discount + entropy, data=dataset)
+```
+
+```{r}
+model_lm
+```
+
+
+```{r}
+summary(model_lm)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

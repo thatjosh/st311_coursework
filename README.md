@@ -49,3 +49,6 @@ This package contains:
   in `memory_modules.py`
 - utilitarian classes and functions used by the scripts \
   in `utils`
+- code to:
+  - analyse results from hyperparam tuning \
+    in `regression_analysis.Rmd`
